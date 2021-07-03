@@ -1,4 +1,9 @@
 pipeline {
+    
+    agent {
+        label 'agent any' //The id of the slave/agent where the build should be executed, if it doesn't matter use "agent any" instead.
+    }
+    
     stages {
         stage('Checkout') {
             steps { //Checking out the repo
