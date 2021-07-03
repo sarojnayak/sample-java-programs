@@ -1,5 +1,4 @@
 pipeline {
-
     stages {
         stage('Checkout') {
             steps { //Checking out the repo
